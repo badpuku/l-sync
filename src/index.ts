@@ -25,7 +25,7 @@ const textEventHandler = async (
 
   const response: line.TextMessage = {
     type: 'text',
-    text: `${text}と言われましても`,
+    text: `${text}と言われましても（${event.source.type === "group"? event.source.groupId : event.source.userId}）`,
   };
 
   const replyMessageRequest: line.messagingApi.ReplyMessageRequest = {
@@ -60,5 +60,7 @@ app.post('/webhook', async (c) => {
 
   return c.status(200);
 });
+
+
 
 export default app
