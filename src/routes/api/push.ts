@@ -1,8 +1,8 @@
 import { Hono } from "hono";
-import { Bindings } from "../../types";
-import { sendPushMessage } from "../../services/lineClient";
-import { logger } from "../../utils/logger";
-import { createErrorResponse, createSuccessResponse } from "../../utils/helpers";
+import { Bindings } from "@/types";
+import { sendPushMessage } from "@/services/lineClient";
+import { logger } from "@/utils/logger";
+import { createErrorResponse, createSuccessResponse } from "@/utils/helpers";
 
 export const pushRouter = new Hono<{ Bindings: Bindings }>();
 

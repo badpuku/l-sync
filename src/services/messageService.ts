@@ -1,5 +1,5 @@
-import { LineClient, LineEvent, LineMessageAPIResponseBase } from "../types";
-import { sendReplyMessage } from "./lineClient";
+import { LineClient, LineEvent, LineMessageAPIResponseBase } from "@/types";
+import { sendReplyMessage } from "@/services/lineClient";
 
 export const handleTextMessage = async (
   client: LineClient,

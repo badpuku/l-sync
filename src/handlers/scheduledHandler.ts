@@ -1,6 +1,6 @@
 import { ExportedHandlerScheduledHandler } from "@cloudflare/workers-types";
-import { sendPushMessage } from "../services/lineClient";
-import { Bindings } from "../types";
+import { sendPushMessage } from "@/services/lineClient";
+import { Bindings } from "@/types";
 
 export const handleScheduled: ExportedHandlerScheduledHandler<Bindings> = async (event, env, ctx) => {
   // スケジュール実行時に何かアクションを起こしたい場合はここに実装

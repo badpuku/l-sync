@@ -1,5 +1,5 @@
-import { LineClient, LineEvent } from "../types";
-import { handleTextMessage } from "../services/messageService";
+import { LineClient, LineEvent } from "@/types";
+import { handleTextMessage } from "@/services/messageService";
 
 export const processWebhookEvent = async (
   client: LineClient,

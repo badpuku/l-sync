@@ -1,10 +1,10 @@
 import { Hono } from "hono";
 import * as line from "@line/bot-sdk";
-import { Bindings } from "../types";
-import { createLineClient } from "../services/lineClient";
-import { getMiddlewareConfig } from "../config/line";
-import { processWebhookEvent } from "../handlers/messageHandler";
-import { logger } from "../utils/logger";
+import { Bindings } from "@/types";
+import { createLineClient } from "@/services/lineClient";
+import { getMiddlewareConfig } from "@/config/line";
+import { processWebhookEvent } from "@/handlers/messageHandler";
+import { logger } from "@/utils/logger";
 
 export const webhookRouter = new Hono<{ Bindings: Bindings }>();
 

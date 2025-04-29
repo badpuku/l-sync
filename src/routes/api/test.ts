@@ -1,7 +1,7 @@
 import { Hono } from "hono";
-import { Bindings } from "../../types";
-import { logger } from "../../utils/logger";
-import { createErrorResponse, createSuccessResponse } from "../../utils/helpers";
+import { Bindings } from "@/types";
+import { logger } from "@/utils/logger";
+import { createErrorResponse, createSuccessResponse } from "@/utils/helpers";
 
 export const testRouter = new Hono<{ Bindings: Bindings }>();
 

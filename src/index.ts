@@ -1,9 +1,9 @@
 import { Hono } from "hono";
-import { Bindings } from "./types";
-import { webhookRouter } from "./routes/webhook";
-import { pushRouter } from "./routes/api/push";
-import { testRouter } from "./routes/api/test";
-import { handleScheduled } from "./handlers/scheduledHandler";
+import { Bindings } from "@/types";
+import { webhookRouter } from "@/routes/webhook";
+import { pushRouter } from "@/routes/api/push";
+import { testRouter } from "@/routes/api/test";
+import { handleScheduled } from "@/handlers/scheduledHandler";
 
 const app = new Hono<{ Bindings: Bindings }>();
 

@@ -1,5 +1,5 @@
 import * as line from "@line/bot-sdk";
-import { Bindings } from "../types";
+import { Bindings } from "@/types";
 
 export const createLineConfig = (env: Bindings): line.ClientConfig => {
   return {

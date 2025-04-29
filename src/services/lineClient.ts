@@ -1,6 +1,6 @@
 import * as line from "@line/bot-sdk";
-import { Bindings, LineClient, LineTextMessage, LineReplyMessageRequest } from "../types";
-import { createLineConfig } from "../config/line";
+import { Bindings, LineClient, LineTextMessage, LineReplyMessageRequest } from "@/types";
+import { createLineConfig } from "@/config/line";
 
 export const createLineClient = (env: Bindings): LineClient => {
   const config = createLineConfig(env);
