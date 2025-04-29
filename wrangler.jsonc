@@ -3,9 +3,9 @@
   "name": "lsync",
   "main": "src/index.ts",
   "compatibility_date": "2025-04-25",
-  //"triggers": {
-  //  "crons": ["0 0 20 * *"] // 毎月20日の午前0時
-  //},
+  "triggers": {
+    "crons": ["*/2 * * * *"] // 10分ごとに実行
+  },
   "compatibility_flags": [
     "nodejs_compat"
   ],
