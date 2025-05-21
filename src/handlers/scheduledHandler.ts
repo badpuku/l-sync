@@ -14,25 +14,25 @@ export const handleScheduled: ExportedHandlerScheduledHandler<Bindings> = async 
   const MONTHLY_GYM_RESERVATION_MESSAGE_DAY_25 = `【抽選結果】体育館の抽選結果を確認し、確定してください。\n\n予約システム：${RESERVATION_SYSTEM_URL} \nアカウント情報：${ACCOUNT_INFORMATION_URL}`;
   
   switch (event.cron) {
-    case "0 0 20 * *":
+    case "0 9 20 * *":
       ctx.waitUntil(
         sendPushMessage(env, MONTHLY_GYM_RESERVATION_MESSAGE_DAY_20)
           .catch(error => logger.error("スケジュール送信エラー:", error))
       );
       break;
-    case "0 0 21 * *":
+    case "0 9 21 * *":
       ctx.waitUntil(
         sendPushMessage(env, MONTHLY_GYM_RESERVATION_MESSAGE_DAY_21)
           .catch(error => logger.error("スケジュール送信エラー:", error))
       );
       break;
-    case "0 0 22 * *":
+    case "0 9 22 * *":
       ctx.waitUntil(
         sendPushMessage(env, MONTHLY_GYM_RESERVATION_MESSAGE_DAY_22)
           .catch(error => logger.error("スケジュール送信エラー:", error))
       );
       break;
-    case "0 0 25 * *":
+    case "0 9 25 * *":
       ctx.waitUntil(
         sendPushMessage(env, MONTHLY_GYM_RESERVATION_MESSAGE_DAY_25)
           .catch(error => logger.error("スケジュール送信エラー:", error))

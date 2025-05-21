@@ -4,7 +4,7 @@
   "main": "src/index.ts",
   "compatibility_date": "2025-04-25",
   "triggers": {
-    "crons": ["*/2 * * * *"] // 10分ごとに実行
+    "crons": ["0 9 20 * *", "0 9 21 * *", "0 9 22 * *", "0 9 25 * *"]
   },
   "compatibility_flags": [
     "nodejs_compat"
